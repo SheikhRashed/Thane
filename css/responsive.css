@@ -1,0 +1,76 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+
+  .media .prev-arrow{
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.media .next-arrow{
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+}
+}
+
+/* Small devices (landscape phones upto 767px) */
+@media (max-width: 767px) {
+  h1 {
+    white-space: normal;
+  }
+
+  .header .txt p {
+    white-space: normal;
+  }
+
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+  
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) { 
+  .header-top {
+    margin-top: 25px;
+  }
+
+
+  .testimonial .prev-arrow{
+    top: 120%;
+    left: 35%;
+    z-index: 1;
+  }
+  .testimonial .next-arrow{
+    top: 120%;
+    right: 35%;
+  }
+
+
+  .testimonial .slick-dots {
+    bottom: -92px;
+  }
+
+
+ }
+
+/* Large devices (desktops and laptop) */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 10px 5px 20px 5px;
+  }
+ }
+/* Large devices (desktops and laptop) */
+@media (max-width: 1199px) {
+
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  
+ }

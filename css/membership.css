@@ -1,0 +1,524 @@
+@font-face {
+  src: url(../fonts/Gilroy-Regular.ttf);
+  font-family: gilroy-regular;
+}
+@font-face {
+  src: url(../fonts/Gilroy-Medium.ttf);
+  font-family: gilroy-medium;
+}
+@font-face {
+  src: url(../fonts/Gilroy-Bold.ttf);
+  font-family: gilroy-bold;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+ 
+::after, ::before {
+  box-sizing: border-box;
+}
+ 
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+   
+ul, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+body {
+  background: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+/* basic css end */
+
+/* common css start */
+h1 {
+  font-family: gilroy-bold;
+  font-size: 48px;
+  color: #fff;
+  padding: 60px 0 10px;
+  white-space: pre-line;
+}
+
+h2 {
+  font-family: gilroy-bold;
+  font-size: 30px;
+  color: #333;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+h2::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background: #EE4E14;
+  opacity: 0.5;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+p {
+  font-family: gilroy-medium;
+  font-size: 18px;
+  color: #666;
+}
+h3 {
+  font-size: 20px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+
+.my-btn {
+  font-family: gilroy-medium;
+  font-size: 15px;
+  color: #fff;
+  background: #EE4E14;
+  padding: 10px 40px;
+  text-align: center;
+  border-radius: 50px;
+}
+.my-btn:hover {
+  color: #111;
+}
+
+
+.round-btn i{
+  width: 60px;
+  height: 60px;
+  background: #EE4E14;
+  color: #fff;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  font-size: 22px;
+  display: grid;
+  place-items: center;
+}
+
+/*// end of common css */
+
+/* main css start */
+
+
+/* === header part start === */
+.header {
+  min-height: 270px;
+  background: url(../images/Membership/mamber-header.png) no-repeat center center/cover;
+  position: relative;
+  z-index: 1;
+}
+
+.header::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #333;
+  opacity: .75;
+  z-index: -1;
+}
+
+.header-top {
+  position: absolute;
+  z-index: 1;
+  right: 120px;
+  top: 15px;
+}
+
+.header-top span {
+  font-family: gilroy-medium;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff !important;
+  margin-top: 3px;
+  padding-left: 10px;
+}
+
+.header .social-icon img {
+  padding: 0 5px;
+}
+
+.header .booking ,
+.header .navbar-nav {
+  margin-top: 40px;
+}
+
+.header .navbar-light .navbar-nav .nav-link {
+  font-family: gilroy-medium;
+  font-size:16px ;
+  font-weight: 600;
+  color: #fff !important;
+}
+
+.header .booking-btn {
+  background: #EE4E14;
+  padding: 5px 20px;
+  color: #fff !important;
+  height: 35px;
+  border-radius: 25px;
+}
+
+.header .booking img {
+  margin-top: -43px;
+  margin-left: 10px;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: transparent;
+  background: #fff;
+}
+
+.navbar-toggler-icon {
+  background-image: none !important;
+  color: #EE4E14;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+}
+
+.header .txt p {
+  font-family: gilroy-medium;
+  font-size: 20px;
+  color: rgba(255, 255, 255, .7);
+  white-space: pre-line;
+}
+
+.header .txt .header-btn a {
+  background: #EE4E14;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 25px;
+  margin: 10px;
+  display: block;
+  min-width: 200px;
+}
+.header .txt .header-btn a:hover {
+  color: #111;
+}
+
+.header .txt ul li {
+  display: inline-block;
+  text-align: center;
+}
+
+.header .video-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -35px;
+  z-index: 1;
+}
+
+.header .breadcrumb-item.active,
+.header .breadcrumb-item a {
+  color: #fff;
+  font-family: gilroy-regular;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.header .breadcrumb {
+ padding-top: 40px;
+ background: transparent !important;
+}
+
+/* ===//end of header part === */
+
+
+/* === workspace part start === */
+.workspace {
+  padding: 80px 0px;
+}
+.workspace .img-box {
+  position: relative;
+}
+.workspace .img-box span {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+  font-family: gilroy-bold;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.service-status .status {
+  color: rgba(0, 0, 0, .3);
+  font-family: gilroy-bold;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.service-status li {
+  padding: 5px 10px;
+}
+.workspace .txt p {
+  font-size: 13px;
+  color: #a4a4a4;
+  padding: 20px 0px;
+  margin-bottom: 10px;
+  min-height: 100px;
+}
+.service-status  img {
+  display: block;
+  margin: 10px auto !important;
+
+}
+
+.workspace .txt {
+  border: 1px solid rgb(219, 219, 219);
+  padding: 10px;
+  border-radius: 15px;
+  border-top-color: transparent;
+  margin-top: -20px;
+  min-height: 400px;
+}
+
+
+
+.workspace .prev-arrow ,
+.workspace  .next-arrow {
+  width: 40px;
+  height: 40px;
+  background: #EE4E14;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 20px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  position: absolute;
+}
+
+.workspace .prev-arrow{
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.workspace .next-arrow{
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+}
+
+
+/* ===  // workspace part end === */
+
+/* === meeting part start === */
+.meeting {
+  padding: 0px 0px 80px 0;
+}
+.meeting .img-box {
+  position: relative;
+}
+.meeting .img-box span {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+  font-family: gilroy-bold;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.service-status .status {
+  color: rgba(0, 0, 0, .3);
+  font-family: gilroy-bold;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.service-status li {
+  padding: 5px 10px;
+}
+.meeting .txt p {
+  font-size: 13px;
+  color: #a4a4a4;
+  padding: 20px 0px;
+  margin-bottom: 10px;
+  min-height: 100px;
+}
+.service-status  img {
+  display: block;
+  margin: 10px auto !important;
+
+}
+
+.meeting .txt {
+  border: 1px solid rgb(219, 219, 219);
+  padding: 10px;
+  border-radius: 15px;
+  border-top-color: transparent;
+  margin-top: -20px;
+  min-height: 400px;
+}
+
+
+
+.meeting .prev-arrow ,
+.meeting  .next-arrow {
+  width: 40px;
+  height: 40px;
+  background: #EE4E14;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 20px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  position: absolute;
+}
+
+.meeting .prev-arrow{
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.meeting .next-arrow{
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+}
+/* ===  // meeting part end === */
+
+
+/* === footer part start === */
+.footer {
+  padding: 80px 0px;
+  background-color: #171717;
+}
+
+.footer h2 {
+  color: #fff;
+}
+.footer h2::before {
+  opacity: .9;
+}
+.footer .form-control {
+  background: #1d1d1d;
+  border-radius: 25px;
+  border-color: #666;
+}
+.contact-form textarea {
+  resize: none;
+}
+.contact-form .my-btn {
+  width: 200px;
+  margin: 30px 0px 50px 0px;
+}
+.footer .contact-heading {
+  font-family: gilroy-bold;
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+}
+.footer .contact-main {
+  font-family: gilroy-regular;
+  font-size: 17px;
+  color: #fff
+}
+
+.footer .border-bottom {
+  border-color: #666 !important;
+}
+.footer-btn li {
+  background-color: #1d1d1d;
+  border-radius: 25px;
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  margin: 10px;
+}
+.footer-btn span{
+  font-family: gilroy-medium;
+  font-size: 12px;
+  color: #707070;
+  display: block;
+  margin-right: 20px;
+}
+
+.footer-btn i {
+  background: #EE4E14;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #fff;
+  display: grid;
+  place-items: center;
+}
+
+.footer .copyright {
+  font-family: gilroy-regular;
+  font-size: 15px;
+  color: rgba(255, 255, 255, .30);
+}
+/* ===//end of footer part === */
+
+
+/* === back to top part start === */
+.back-to-top {
+  position: absolute;
+  top: -120px;
+  right: 0;
+  z-index: 999;
+}
+
+/* ===//end of back to top part === */
+
+@media(max-width: 576px) {
+  
+.meeting .prev-arrow{
+  left: 0px;
+}
+.workspace .prev-arrow{
+  left: 0px;
+}
+.meeting .next-arrow{
+  right: 0px;
+}
+.workspace .next-arrow{
+  right: 0px;
+}
+}
+
+@media(max-width: 991px){
+  .breadcrumb {
+    justify-content: center;
+    
+  }
+  .header .breadcrumb {
+    padding-top: 0;
+  }
+
+}
+
+/* 
+font-family: gilroy-medium;
+font-family: gilroy-bold;
+font-family: gilroy-regular;
+
+ */
